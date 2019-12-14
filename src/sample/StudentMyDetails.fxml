@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="StudentMyDetailsPane" prefHeight="498.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentMyDetailsController">
+   <children>
+      <TableView layoutY="70.0" prefHeight="428.0" prefWidth="538.0" style="-fx-background-color: white; -fx-border-color: red;">
+        <columns>
+          <TableColumn prefWidth="75.0" style="-fx-alignment: center; -fx-border-color: black;" text="Title" />
+          <TableColumn prefWidth="75.0" style="-fx-alignment: center; -fx-border-color: black;" text="Exp.date" />
+        </columns>
+      </TableView>
+      <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#changeSceneToStudentView" prefHeight="42.0" prefWidth="68.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #816868; -fx-background-color: white;" text="X">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="91.0" layoutY="14.0" prefHeight="17.0" prefWidth="74.0" text="Name:" textFill="#c6bfbf">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="38.0" prefHeight="20.0" prefWidth="92.0" text="Current debt:" textFill="#c6bfbf">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="15.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="137.0" layoutY="11.0" prefHeight="20.0" prefWidth="161.0" />
+      <TextField editable="false" layoutX="183.0" layoutY="40.0" />
+   </children>
+</AnchorPane>

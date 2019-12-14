@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="StudentBooksPane" prefHeight="498.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentBooksController">
+   <children>
+      <TableView layoutY="64.0" prefHeight="434.0" prefWidth="538.0" style="-fx-background-color: white; -fx-border-color: red;">
+        <columns>
+          <TableColumn prefWidth="75.0" style="-fx-border-color: black;" text="C1" />
+          <TableColumn prefWidth="75.0" style="-fx-border-color: black;" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="5.0" layoutY="8.0" mnemonicParsing="false" onAction="#changeSceneToStudentView" prefHeight="46.0" prefWidth="50.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-background-color: white; -fx-border-color: #816868;" text="X">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ChoiceBox layoutX="62.0" layoutY="13.0" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #816868; -fx-border-color: white; -fx-background-radius: 50px; -fx-border-radius: 50px;" />
+      <Button layoutX="210.0" layoutY="13.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="105.0" style="-fx-alignment: center; -fx-background-color: #816868; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: white;" text="Filter" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book" size="17.0" />
+         </font>
+      </Button>
+      <CheckBox layoutX="433.0" layoutY="20.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="97.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 50px; -fx-background-radius: 50px; -fx-alignment: center;" text="Borrowed">
+         <font>
+            <Font name="Avenir Book" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="321.0" layoutY="13.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="105.0" style="-fx-alignment: center; -fx-background-color: #816868; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: white;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

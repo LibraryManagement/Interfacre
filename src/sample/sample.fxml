@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="538.0" styleClass="root" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="207.0" layoutY="44.0" prefHeight="72.0" prefWidth="140.0" style="-fx-border-radius: 50px; -fx-border-color: white;" text=" Library" textFill="#d3bfbf">
+         <font>
+            <Font name="Avenir Book" size="38.0" />
+         </font>
+      </Label>
+      <TextField layoutX="197.0" layoutY="221.0" prefHeight="30.0" prefWidth="161.0" style="-fx-background-radius: 50px; -fx-background-color: white;" />
+      <PasswordField layoutX="197.0" layoutY="273.0" prefHeight="30.0" prefWidth="161.0" style="-fx-background-radius: 50px; -fx-background-color: white;" />
+      <Button onAction="#login" contentDisplay="CENTER" layoutX="215.0" layoutY="324.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="124.0" style="-fx-background-radius: 100px; -fx-border-color: white; -fx-border-radius: 50px; -fx-background-color: #816868; -fx-alignment: center;" text="Login" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Book" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="110.0" layoutY="226.0" prefHeight="17.0" prefWidth="87.0" text="              Login:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="278.0" prefHeight="17.0" prefWidth="87.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="435.0" layoutY="223.0" minHeight="30.0" mnemonicParsing="false" onAction="#changeScene" prefWidth="70.0" style="-fx-background-color: white; -fx-alignment: center;" text="Admin" />
+      <Button layoutX="434.0" layoutY="274.0" minHeight="30.0" mnemonicParsing="false" onAction="#changeSceneToLibrarian" prefWidth="70.0" style="-fx-background-color: white; -fx-alignment: center;" text="Librarian" />
+      <Button layoutX="435.0" layoutY="324.0" mnemonicParsing="false" onAction="#changeSceneToStudent" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: white; -fx-alignment: center;" text="Student" />
+   </children>
+</AnchorPane>

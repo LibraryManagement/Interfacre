@@ -1,0 +1,13 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+}
+
+.root {
+    -fx-background-image: url("module-info.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 538 498;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}

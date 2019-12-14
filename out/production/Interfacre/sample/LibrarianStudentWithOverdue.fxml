@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="LibrarianStudentWithOverduePane" prefHeight="498.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LibrarianStudentWithOverdueController">
+   <children>
+      <TableView layoutY="57.0" prefHeight="441.0" prefWidth="538.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeSceneToLibrarian" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: white; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #816868; -fx-alignment: center;" text="X">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

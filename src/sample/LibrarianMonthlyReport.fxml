@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="LibrarianMonthlyReportPane" prefHeight="498.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LibrarianMonthlyReportController">
+   <children>
+      <TableView layoutY="57.0" prefHeight="441.0" prefWidth="538.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#changeSceneToLibrarian" prefHeight="46.0" prefWidth="101.0" style="-fx-alignment: center; -fx-background-color: white; -fx-background-radius: 50px; -fx-border-color: #816868; -fx-border-radius: 50px;" text="X">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

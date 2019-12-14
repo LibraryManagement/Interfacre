@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="LibrarianBooksPane" prefHeight="498.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LibrarianBooksController">
+   <children>
+      <TableView layoutY="51.0" prefHeight="447.0" prefWidth="538.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#changeSceneToLibrarianView" prefHeight="37.0" prefWidth="83.0" style="-fx-border-color: #816868; -fx-background-color: white; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-alignment: center;" text="X">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="112.0" layoutY="7.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: white; -fx-background-color: #816868;" text="+" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="209.0" layoutY="7.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: white; -fx-background-color: #816868;" text="Modify" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="306.0" layoutY="7.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: white; -fx-background-color: #816868;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="404.0" layoutY="7.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: white; -fx-background-color: #816868;" text="Filter" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
