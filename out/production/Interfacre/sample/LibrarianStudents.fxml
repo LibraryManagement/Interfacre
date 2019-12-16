@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="librarianStudentsPane" prefHeight="498.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LibrarianStudentsController">
+<AnchorPane fx:id="librarianStudentsPane" prefHeight="498.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LibrarianStudentsController">
    <children>
-      <TableView layoutY="49.0" prefHeight="450.0" prefWidth="538.0" style="-fx-background-color: white;">
+      <TableView fx:id="tableView" layoutY="49.0" prefHeight="450.0" prefWidth="538.0" style="-fx-background-color: white;">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="email" prefWidth="138.39996337890625" text="EMAIL" />
+          <TableColumn fx:id="firstName" prefWidth="129.59998166561127" text="NAME" />
+            <TableColumn fx:id="id" prefWidth="106.4000244140625" text="ID" />
+            <TableColumn fx:id="tnumber" prefWidth="165.60000610351562" text="TEL NUMBER" />
         </columns>
       </TableView>
       <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#changeSceneToLibrarianView" prefHeight="45.0" prefWidth="81.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-background-color: white; -fx-border-color: #816868;" text="X">
