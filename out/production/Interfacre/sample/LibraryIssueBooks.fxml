@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="issuPane" prefHeight="498.0" prefWidth="538.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LibraryIssueBooksControl">
+   <children>
+      <Button layoutX="179.0" layoutY="358.0" mnemonicParsing="false" onAction="#changeSceneToLibrarian" prefHeight="45.0" prefWidth="81.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-background-color: white; -fx-border-color: #816868;" text="BACK">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="18.0" layoutY="60.0" text="Book ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="18.0" layoutY="160.0" text="Subject">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="18.0" layoutY="110.0" text="Title">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="18.0" layoutY="210.0" text="Publish Date">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="Id" layoutX="103.0" layoutY="56.0" onAction="#selectDate" promptText="ENTER ID TO SEARCH" style="-fx-border-color: #816868;" />
+      <TextField fx:id="lbldate" layoutX="103.0" layoutY="106.0" style="-fx-border-color: #816868;" />
+      <TextField fx:id="datePicker" layoutX="103.0" layoutY="156.0" style="-fx-border-color: #816868;" />
+      <TextField fx:id="pdate" layoutX="103.0" layoutY="206.0" style="-fx-border-color: #816868;" />
+      <TextField fx:id="qdatity" layoutX="103.0" layoutY="256.0" style="-fx-border-color: #816868;" />
+      <Label layoutX="267.0" layoutY="60.0" text="Student ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="269.0" layoutY="110.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="268.0" layoutY="160.0" prefHeight="18.0" prefWidth="39.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="268.0" layoutY="260.0" text="Issue Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <TextField fx:id="stId" layoutX="353.0" layoutY="56.0" onAction="#selectDate2" promptText="ENTER ID TO SEARCH" style="-fx-border-color: #816868;" />
+      <TextField fx:id="stName" layoutX="353.0" layoutY="106.0" style="-fx-border-color: #816868;" />
+      <TextField fx:id="email" layoutX="353.0" layoutY="156.0" style="-fx-border-color: #816868;" />
+      <Button layoutX="305.0" layoutY="358.0" mnemonicParsing="false" onAction="#mainSelection" prefHeight="45.0" prefWidth="81.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-background-color: white; -fx-border-color: #816868;" text="ISSUE">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="issueDate" layoutX="353.0" layoutY="256.0" onAction="#mainSelection" prefHeight="27.0" prefWidth="151.0" promptText="         YYYY-MM-DD" style="-fx-border-color: #816868;" />
+      <Label layoutX="18.0" layoutY="260.0" text="Quantity">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stat" layoutX="353.0" layoutY="206.0" style="-fx-border-color: #816868;" />
+      <Label layoutX="268.0" layoutY="210.0" prefHeight="18.0" prefWidth="39.0" text="Status">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
