@@ -8,7 +8,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -24,6 +26,47 @@ public class LibrarianStudentsController implements Initializable {
     @FXML private TableColumn<Students, String> id;
     @FXML private TableColumn<Students, String> email;
     @FXML private TableColumn<Students, String> tnumber;
+
+    public void changeFirstCellEvent(TableColumn.CellEditEvent edditedCell) throws SQLException {
+        Students studentSelected = tableView.getSelectionModel().getSelectedItem();
+        String idOfSelected = studentSelected.getId();
+        Statement stmt = con.createStatement();
+        String sds = edditedCell.getNewValue().toString();
+        String dmop = "UPDATE users SET name_user='"+sds+"' WHERE id='"+idOfSelected+"'";
+        stmt.execute(dmop);
+        stmt.close();
+        studentSelected.setFirstName(sds);
+    }
+    public void changeEmailCellEvent(TableColumn.CellEditEvent edditedCell) throws SQLException {
+        Students studentSelected = tableView.getSelectionModel().getSelectedItem();
+        String idOfSelected = studentSelected.getId();
+        Statement stmt = con.createStatement();
+        String sds = edditedCell.getNewValue().toString();
+        String dmop = "UPDATE users SET email='"+sds+"' WHERE id='"+idOfSelected+"'";
+        stmt.execute(dmop);
+        stmt.close();
+        studentSelected.setEmail(sds);
+    }
+    public void changeIDCellEvent(TableColumn.CellEditEvent edditedCell) throws SQLException {
+        Students studentSelected = tableView.getSelectionModel().getSelectedItem();
+        String idOfSelected = studentSelected.getEmail();
+        Statement stmt = con.createStatement();
+        String sds = edditedCell.getNewValue().toString();
+        String dmop = "UPDATE users SET id='"+sds+"' WHERE email='"+idOfSelected+"'";
+        stmt.execute(dmop);
+        stmt.close();
+        studentSelected.setId(sds);
+    }
+    public void changePhoneCellEvent(TableColumn.CellEditEvent edditedCell) throws SQLException {
+        Students studentSelected = tableView.getSelectionModel().getSelectedItem();
+        String idOfSelected = studentSelected.getId();
+        Statement stmt = con.createStatement();
+        String sds = edditedCell.getNewValue().toString();
+        String dmop = "UPDATE users SET phonenum='"+sds+"' WHERE id='"+idOfSelected+"'";
+        stmt.execute(dmop);
+        stmt.close();
+        studentSelected.setTnumber(sds);
+    }
 
 
     @FXML
@@ -45,18 +88,27 @@ public class LibrarianStudentsController implements Initializable {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("LibrarianView.fxml"));
         librarianStudentsPane.getChildren().setAll(pane);
     }
+    public void changeSceneToModifyView(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("hahaha.fxml"));
+        librarianStudentsPane.getChildren().setAll(pane);
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         email.setCellValueFactory(new PropertyValueFactory<Students, String>("email"));
         id.setCellValueFactory(new PropertyValueFactory<Students, String>("id"));
         tnumber.setCellValueFactory(new PropertyValueFactory<Students, String>("tnumber"));
         firstName.setCellValueFactory(new PropertyValueFactory<Students, String>("firstName"));
-
         try {
             tableView.setItems(getStudent());
         } catch (SQLException e) {
             e.printStackTrace();
         }
+//        tableView.setEditable(true);
+//        firstName.setCellFactory(TextFieldTableCell.forTableColumn());
+//        email.setCellFactory(TextFieldTableCell.forTableColumn());
+//        id.setCellFactory(TextFieldTableCell.forTableColumn());
+//        tnumber.setCellFactory(TextFieldTableCell.forTableColumn());
+
     }
     public ObservableList<Students>getStudent() throws SQLException {
 

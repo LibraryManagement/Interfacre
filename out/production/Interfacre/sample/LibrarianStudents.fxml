@@ -11,10 +11,10 @@
    <children>
       <TableView fx:id="tableView" layoutY="49.0" prefHeight="450.0" prefWidth="538.0" style="-fx-background-color: white;">
         <columns>
-          <TableColumn fx:id="email" prefWidth="138.39996337890625" text="EMAIL" />
-          <TableColumn fx:id="firstName" prefWidth="129.59998166561127" text="NAME" />
-            <TableColumn fx:id="id" prefWidth="106.4000244140625" text="ID" />
-            <TableColumn fx:id="tnumber" prefWidth="165.60000610351562" text="TEL NUMBER" />
+          <TableColumn fx:id="email" onEditCommit="#changeEmailCellEvent" prefWidth="163.99994504451752" style="-fx-border-color: #816868;" styleClass="CENTER" text="EMAIL" />
+          <TableColumn fx:id="firstName" onEditCommit="#changeFirstCellEvent" prefWidth="145.60003662109375" style="-fx-border-color: #816868;" styleClass="CENTER" text="NAME" />
+            <TableColumn fx:id="id" onEditCommit="#changeIDCellEvent" prefWidth="93.5999755859375" style="-fx-border-color: #816868;" styleClass="CENTER" text="ID" />
+            <TableColumn fx:id="tnumber" onEditCommit="#changePhoneCellEvent" prefWidth="139.99996948242188" style="-fx-border-color: #816868;" styleClass="CENTER" text="TEL NUMBER" />
         </columns>
       </TableView>
       <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#changeSceneToLibrarianView" prefHeight="45.0" prefWidth="81.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-background-color: white; -fx-border-color: #816868;" text="X">
@@ -26,7 +26,7 @@
             <Font name="Avenir Book" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="179.0" layoutY="2.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="81.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: white; -fx-background-color: #816868;" text="Modify" textFill="WHITE">
+      <Button layoutX="179.0" layoutY="2.0" mnemonicParsing="false" onAction="#changeSceneToModifyView" prefHeight="45.0" prefWidth="81.0" style="-fx-alignment: center; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: white; -fx-background-color: #816868;" text="Modify" textFill="WHITE">
          <font>
             <Font name="Avenir Book" size="13.0" />
          </font>

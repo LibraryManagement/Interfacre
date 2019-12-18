@@ -21,7 +21,7 @@ public class Students {
     }
 
     public void setFirstName(String firstName) {
-        this.firstName.set(firstName);
+        this.firstName = new SimpleStringProperty(firstName);
     }
 
     public String getId() {
@@ -33,7 +33,7 @@ public class Students {
     }
 
     public void setId(String id) {
-        this.id.set(id);
+        this.id = new SimpleStringProperty(id);
     }
 
     public String getEmail() {
@@ -45,7 +45,7 @@ public class Students {
     }
 
     public void setEmail(String email) {
-        this.email.set(email);
+        this.email  =new SimpleStringProperty(email);
     }
 
     public String getTnumber() {
@@ -57,6 +57,6 @@ public class Students {
     }
 
     public void setTnumber(String tnumber) {
-        this.tnumber.set(tnumber);
+        this.tnumber = new SimpleStringProperty(tnumber);
     }
 }

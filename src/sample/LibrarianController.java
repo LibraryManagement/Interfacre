@@ -40,4 +40,10 @@ public class LibrarianController {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("LibrarianMonthlyReport.fxml"));
         librarianControllerPane.getChildren().setAll(pane);
     }
+    @FXML
+    public void changeSceneToIssueBook(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("LibraryIssueBooks.fxml"));
+        librarianControllerPane.getChildren().setAll(pane);
+    }
+
 }
